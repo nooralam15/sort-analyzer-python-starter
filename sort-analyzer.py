@@ -79,6 +79,14 @@ sortTimer(bubbleSort, reversedData, "reversedData", "bubbleSort")
 sortTimer(selectionSort, reversedData, "reversedData", "selectionSort")
 sortTimer(insertionSort, reversedData, "reversedData", "insertionSort")
 
+sortTimer(bubbleSort, nearlySortedData, "nearlySortedData", "bubbleSort")
+sortTimer(selectionSort, nearlySortedData, "nearlySortedData", "selectionSort")
+sortTimer(insertionSort, nearlySortedData, "nearlySortedData", "insertionSort")
+
+sortTimer(bubbleSort, fewUniqueData, "fewUniqueData", "bubbleSort")
+sortTimer(selectionSort, fewUniqueData, "fewUniqueData", "selectionSort")
+sortTimer(insertionSort, fewUniqueData, "fewUniqueData", "insertionSort")
+
 # VERIFY LOADED DATA BY PRINTING FIRST 50 ELEMENTS
 # print(randomData[0:50])
 # print(reversedData[0:50])
