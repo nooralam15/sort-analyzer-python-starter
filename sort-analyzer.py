@@ -75,20 +75,21 @@ fewUniqueData = loadDataArray("data-files/few-unique-values.txt")
 
 #Call the functions
 sortTimer(bubbleSort, randomData, "randomData", "bubbleSort")
-sortTimer(selectionSort, randomData, "randomData", "selectionSort")
-sortTimer(insertionSort, randomData, "randomData", "insertionSort")
-
 sortTimer(bubbleSort, reversedData, "reversedData", "bubbleSort")
-sortTimer(selectionSort, reversedData, "reversedData", "selectionSort")
-sortTimer(insertionSort, reversedData, "reversedData", "insertionSort")
-
 sortTimer(bubbleSort, nearlySortedData, "nearlySortedData", "bubbleSort")
-sortTimer(selectionSort, nearlySortedData, "nearlySortedData", "selectionSort")
-sortTimer(insertionSort, nearlySortedData, "nearlySortedData", "insertionSort")
-
 sortTimer(bubbleSort, fewUniqueData, "fewUniqueData", "bubbleSort")
+
+sortTimer(selectionSort, randomData, "randomData", "selectionSort")
+sortTimer(selectionSort, reversedData, "reversedData", "selectionSort")
+sortTimer(selectionSort, nearlySortedData, "nearlySortedData", "selectionSort")
 sortTimer(selectionSort, fewUniqueData, "fewUniqueData", "selectionSort")
+
+sortTimer(insertionSort, randomData, "randomData", "insertionSort")
+sortTimer(insertionSort, reversedData, "reversedData", "insertionSort")
+sortTimer(insertionSort, nearlySortedData, "nearlySortedData", "insertionSort")
 sortTimer(insertionSort, fewUniqueData, "fewUniqueData", "insertionSort")
+
+
 
 # VERIFY LOADED DATA BY PRINTING FIRST 50 ELEMENTS
 # print(randomData[0:50])
