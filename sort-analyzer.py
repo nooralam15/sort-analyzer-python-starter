@@ -42,10 +42,13 @@ def insertionSort(anArray):
 
 #Initialize a function that will time each sort algorithm
 def sortTimer(searchFunction, array, arrayName, functionName):
-    startTime = time.perf_counter()
-    searchFunction(array)
-    endTime = time.perf_counter()
-    print(arrayName + " took " + str(endTime - startTime) + " seconds in " + functionName)
+    average = 0
+    for i in range(0, 4):
+        startTime = time.perf_counter()
+        searchFunction(array)
+        endTime = time.perf_counter()
+        average+=(endTime - startTime)
+    print(arrayName + " took " + str(average/4) + " average seconds in " + functionName)
 
 
 # RETURN DATA FROM FILE AS AN ARRAY OF INTERGERS
