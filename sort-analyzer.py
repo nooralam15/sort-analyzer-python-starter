@@ -45,7 +45,7 @@ def sortTimer(searchFunction, array, arrayName, functionName):
     average = 0
     for i in range(0, 4):
         startTime = time.perf_counter()
-        searchFunction(array)
+        searchFunction(array[:])
         endTime = time.perf_counter()
         average+=(endTime - startTime)
     print(arrayName + " took " + str(average/4) + " average seconds in " + functionName)
